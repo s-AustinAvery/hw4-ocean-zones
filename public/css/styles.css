@@ -39,29 +39,29 @@ body {
 }
 
 .ocean-image-box {
-  display: flex;
-  justify-content: center;
-  margin: 2rem auto;
-  padding: 1rem;
-  background: rgba(0, 20, 40, 0.4);
-  border-radius: 12px;
-  max-width: 900px;
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: rgba(0, 20, 40, 0.4);
+    border-radius: 12px;
+    max-width: 900px;
 }
 
 .ocean-image {
-  width: 80%;
-  max-width: 850px;
-  border-radius: 12px;
+    width: 80%;
+    max-width: 850px;
+    border-radius: 12px;
 
 
-  border: 3px solid rgba(100, 180, 255, 0.4);
-  box-shadow:
-    0 0 20px rgba(0, 60, 120, 0.6),
-    0 0 40px rgba(0, 80, 160, 0.4);
+    border: 3px solid rgba(100, 180, 255, 0.4);
+    box-shadow:
+      0 0 20px rgba(0, 60, 120, 0.6),
+      0 0 40px rgba(0, 80, 160, 0.4);
 
 
-  max-height: 900px;
-  object-fit: cover;
+    max-height: 900px;
+    object-fit: cover;
 }
 
 .zone-info h2 {
@@ -69,9 +69,9 @@ body {
 }
 
 .meet-line {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
-  color: #b8ecff;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    color: #b8ecff;
 }
 
 .species-box {

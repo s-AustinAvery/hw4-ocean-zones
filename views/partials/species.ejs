@@ -1,57 +1,57 @@
 <section class="species-box">
-  <h3>Who might you find in the <%= title %>?</h3>
+    <h3>Who might you find in the <%= title %>?</h3>
 
-  <% if (species) { %>
+    <% if (species) { %>
 
-    <div class="species-card">
+        <div class="species-card">
 
-      <!-- IMAGE -->
-      <div class="species-card-image">
-        <img src="/img/<%= speciesImage %>" alt="<%= speciesCommonName %> image">
-      </div>
+            <!-- IMAGE -->
+            <div class="species-card-image">
+                <img src="/img/<%= speciesImage %>" alt="<%= speciesCommonName %> image">
+            </div>
 
-      <!-- TEXT INFO -->
-      <div class="species-card-content">
+            <!-- TEXT INFO -->
+            <div class="species-card-content">
 
-        <!-- Scientific + common name -->
-        <p class="meet-line">
-          Meet <strong><%= sillyName %></strong> the <strong><%= speciesCommonName %></strong>
-        </p>
+                <!-- Scientific + common name -->
+                <p class="meet-line">
+                    Meet <strong><%= sillyName %></strong> the <strong><%= speciesCommonName %></strong>
+                </p>
 
-        <!-- Scientific + common name (scientific info block) -->
-        <h4 class="species-title">
-          <%= species.scientificName %>
-          <% if (speciesCommonName) { %>
-            <span class="common-name">(<%= speciesCommonName %>)</span>
-          <% } %>
-        </h4>
+                <!-- Scientific + common name (scientific info block) -->
+                <h4 class="species-title">
+                    <%= species.scientificName %>
+                    <% if (speciesCommonName) { %>
+                        <span class="common-name">(<%= speciesCommonName %>)</span>
+                    <% } %>
+                </h4>
 
-        <!-- Classification -->
-        <p class="classification">
-          <strong>Classification:</strong><br>
-          <%= species.kingdom || "?" %> >
-          <%= species.phylum || "?" %> >
-          <%= species.class || "?" %> >
-          <%= species.order || "?" %> >
-          <%= species.family || "?" %>
-        </p>
+                <!-- Classification -->
+                <p class="classification">
+                    <strong>Classification:</strong><br>
+                    <%= species.kingdom || "?" %> >
+                    <%= species.phylum || "?" %> >
+                    <%= species.class || "?" %> >
+                    <%= species.order || "?" %> >
+                    <%= species.family || "?" %>
+                </p>
 
-        <!-- Authority -->
-        <% if (species.authority) { %>
-          <p class="authority">
-            <strong>First classified by:</strong> <%= species.authority %>
-          </p>
-        <% } %>
+                <!-- Authority -->
+                <% if (species.authority) { %>
+                    <p class="authority">
+                        <strong>First classified by:</strong> <%= species.authority %>
+                    </p>
+                <% } %>
 
-        <!-- Your custom species info -->
-        <p class="species-info">
-          <%= speciesInfo %>
-        </p>
+                <!-- Your custom species info -->
+                <p class="species-info">
+                    <%= speciesInfo %>
+                </p>
 
-      </div>
-    </div>
+            </div>
+        </div>
 
-  <% } else { %>
-    <p>Couldn't load species info right now. The deep sea gremlins are at it again.</p>
-  <% } %>
+    <% } else { %>
+        <p>Couldn't load species info right now. The deep sea gremlins are at it again.</p>
+    <% } %>
 </section>
