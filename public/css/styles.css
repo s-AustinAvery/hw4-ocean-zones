@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #f4f7fc;
+    background: #001427;
+}
+
+.site-header {
+    background: #021d3a;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #0a4f8a;
+}
+
+.site-title {
+    margin: 0 0 0.5rem 0;
+}
+
+.site-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    }
+
+.site-nav a {
+    color: #d4f1ff;
+    text-decoration: none;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.ocean-image-box {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(0, 20, 40, 0.4);
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+.ocean-image {
+  width: 80%;
+  max-width: 850px;
+  border-radius: 12px;
+
+
+  border: 3px solid rgba(100, 180, 255, 0.4);
+  box-shadow:
+    0 0 20px rgba(0, 60, 120, 0.6),
+    0 0 40px rgba(0, 80, 160, 0.4);
+
+
+  max-height: 900px;
+  object-fit: cover;
+}
+
+.zone-info h2 {
+    margin-top: 0;
+}
+
+.meet-line {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #b8ecff;
+}
+
+.species-box {
+    place-items: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.species-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-start;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.species-card-image img {
+    width: 260px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.15);
+}
+
+.species-card-content {
+    flex: 1;
+}
+
+.species-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.3rem;
+    color: #e0f7ff;
+}
+
+.common-name {
+    font-style: italic;
+    color: #b0eaff;
+}
+
+.classification,
+.authority,
+.species-info {
+    margin: 0.5rem 0;
+    line-height: 1.4;
+    }
+
+.site-footer {
+    margin-top: 3rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.tech-note {
+    color: #7fb8d9;
+}
+
+/* zone backgrounds */
+body.sunlit-zone {
+  background: linear-gradient(to bottom, #5cc6ff, #001427);
+}
+
+body.twilight-zone {
+  background: linear-gradient(to bottom, #243b53, #001427);
+}
+
+body.midnight-zone {
+  background: radial-gradient(circle at top, #243b53, #000814);
+}
+
+body.abyss {
+  background: radial-gradient(circle at bottom, #001427, #000000);
+}
+
+body.deep-trenches {
+  background: radial-gradient(circle at bottom, #00080f, #000000);
+}
